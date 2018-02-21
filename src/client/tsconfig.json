@@ -1,0 +1,57 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "declaration": false,
+    "removeComments": true,
+    "noLib": false,
+    "lib": [
+      "es2016",
+      "dom"
+    ],
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "pretty": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitUseStrict": false,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "typeRoots": [
+      "../../node_modules/@types",
+      "../../node_modules"
+    ],
+
+    "types": [
+      "node",
+      "jasmine",
+      "systemjs"
+    ]
+  },
+  "compileOnSave": false,
+  "paths": {
+    "@uirouter/core": [
+      "../../node_modules/@uirouter/core/_bundles/ui-router-core.js"
+    ],
+    "@uirouter/angular": [
+      "../../node_modules/@uirouter/angular/_bundles/ui-router-ng2.js"
+    ],
+    "@uirouter/rx": [
+      "../../node_modules/@uirouter/rx/_bundles/ui-router-rx.js"
+    ],
+    "@uirouter/sticky-states": [
+      "../../node_modules/@uirouter/sticky-states/_bundles/ui-router-sticky-states.js"
+    ]
+  },
+  "exclude": [
+    "app/main-prod.ts"
+  ],
+  "angularCompilerOptions": {
+    "annotationsAs": "static fields",
+    "skipMetadataEmit": true,
+    "annotateForClosureCompiler": false
+  }
+}
